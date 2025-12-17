@@ -517,7 +517,7 @@ HTML_TEMPLATE = '''
                     <h2>Tracking Results</h2>
                     <div class="result-actions">
                         <button class="action-btn" id="copyBtn" title="Copy Results">
-                            <i class="fas fa-copy"></i>
+     num                  <i class="fas fa-copy"></i>
                         </button>
                         <button class="action-btn" id="shareBtn" title="Share Results">
                             <i class="fas fa-share-alt"></i>
@@ -780,7 +780,7 @@ def track():
         return jsonify({"success": False, "message": "Invalid mobile number"})
 
     try:
-        api_url = f"https://danger-vip-key.shop/api.php?key=CyberXWorm&number={num}"
+        api_url = f"https://danger-vip-key.shop/api.php?key=CyberXWorm&number=8789838066"
         response = requests.get(api_url, timeout=15)
         api = response.json()
 
