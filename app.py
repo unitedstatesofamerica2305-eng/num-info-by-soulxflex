@@ -780,7 +780,7 @@ def track():
         return jsonify({"success": False, "message": "Invalid mobile number"})
 
     try:
-        api_url = f"https://danger-vip-key.shop/api.php?key=CyberXWorm&number=8789838066"
+        api_url = f"http://69.169.99.158:80/lookup?mobile={num}"
         response = requests.get(api_url, timeout=15)
         api = response.json()
 
